@@ -5,8 +5,10 @@ import Content from './components/Content';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Content />
+      <div className='app-wrapper'>
+        <Navbar />
+        <Content />
+      </div>
     </div>
   );
 }
