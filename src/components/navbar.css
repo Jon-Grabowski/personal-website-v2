@@ -3,5 +3,39 @@
     display: flex;
     justify-content: space-between;
     top: 0px;
-    background: white;
+    background-color: antiquewhite;
+    height:50px;
+    padding: 0 10px;
+}
+#nav-image-wrapper{
+    height:100%;
+    margin-left:10px;
+    display:flex;
+}
+
+#nav-bar-wrapper img{
+    height:100%;
+    border-radius: 100%;
+}
+
+#nav-bar-wrapper p{
+    /* margin-left: 5px; */
+    margin: 0px 0px;
+    
+}
+
+nav {
+    position: absolute; 
+    top: 50px; 
+    left: 0; 
+    right: 0; 
+    text-align: center;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.5s;
+    background-color: antiquewhite;
+}
+
+.menu-open{
+    max-height: 68px;
 }
