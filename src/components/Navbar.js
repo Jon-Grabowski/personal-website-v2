@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './navbar.css'
+import './../App.css'
 
 function Navbar() {
     const [menuOpen, setMenuOpen]= useState(false)
@@ -11,10 +12,9 @@ function Navbar() {
                     <img src='../images/IMG_1908_CROPPED_FACE.jpg' alt='profile'/>
                     
                 </div>
-                <div>
-                        <p>Jon</p>
-                        <p>Grabowski</p>
-                    </div>
+                <div> 
+                        <p>Jon Grabowski</p>
+                </div>
                 <div>
                     <p onClick={()=>{setMenuOpen(!menuOpen)}}>LINKS</p>
                 </div>
