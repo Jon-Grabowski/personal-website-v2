@@ -31,25 +31,25 @@ function NameText() {
 
 
     return (
-        <div className='text-start m-auto text-white'>
-            <div className='d-flex text-bottom'>
+        <div className='m-auto text-white'>
+            <div className='d-flex'>
                 <motion.div
                     className='display-1 fw-bold'
                     initial={{x: -400, y: -400,opacity:0, rotateZ:-270}}
                     animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
                     transition={{duration: 5, type: 'spring', stiffness: 110}}
                 >J</motion.div>
-                <div className='d-flex align-items-end'>
+                <div className='d-flex align-items-end pb-3'>
                     {animatedFirstName}
                 </div>
                 <span style={{width: '20px'}}></span>
                 <motion.div
-                    className='display-1 fw-bold'
+                    className='display-2 fw-bold d-flex align-items-end pb-3'
                     initial={{x: -400, y: 400,opacity:0, rotateZ:-270}}
                     animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
                     transition={{duration: 5, type: 'spring', stiffness: 110}}
                 >G</motion.div>
-                <div className='d-flex align-items-end'>
+                <div className='d-flex align-items-end pb-3'>
                     {animatedLastName}
                 </div>
             </div>
