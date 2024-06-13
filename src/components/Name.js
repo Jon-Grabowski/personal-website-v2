@@ -34,7 +34,7 @@ function Name() {
             <div className='d-flex text-bottom'>
                 <motion.div
                     className='display-1 fw-bold'
-                    initial={{x: 100, y: -100,opacity:0, rotateZ:-270}}
+                    initial={{x: -400, y: -400,opacity:0, rotateZ:-270}}
                     animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
                     transition={{duration: 3, type: 'spring', stiffness: 110}}
                 >J</motion.div>
@@ -44,7 +44,7 @@ function Name() {
                 <span style={{width: '20px'}}></span>
                 <motion.div
                     className='display-1 fw-bold'
-                    initial={{x: -100, y: 100,opacity:0, rotateZ:-270}}
+                    initial={{x: -400, y: 400,opacity:0, rotateZ:-270}}
                     animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
                     transition={{delay: 1.5, duration: 3, type: 'spring', stiffness: 110}}
                 >G</motion.div>
