@@ -7,7 +7,7 @@ import Content from './components/Content';
 function App() {
   return (
     <div className="App">
-      <div className='app-wrapper'>
+      <div className='app-wrapper' style={{minHeight:'100vh'}}>
         <Name />
         {/* <Navbar />
         <Content /> */}
