@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-function Name() {
-    const firstName = ['o','n','a','t','h','a','n']
+function NameText() {
+    const firstName = ['o','n']
     const lastName = ['r','a','b','o','w','s','k','i']
 
     const animatedFirstName = firstName.map((letter, index) => {
@@ -24,7 +24,7 @@ function Name() {
                 className='display-2'
                 initial={{opacity: 0, x:-50}}
                 animate={{opacity: 1, x:0}}
-                transition={{delay:(1.6 + (.2*index)), duration: .4, type: 'tween'}}
+                transition={{delay:(.3 + (.1*index)), duration: .4, type: 'tween'}}
             >{letter}</motion.div>
         )
     });
@@ -37,7 +37,7 @@ function Name() {
                     className='display-1 fw-bold'
                     initial={{x: -400, y: -400,opacity:0, rotateZ:-270}}
                     animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
-                    transition={{duration: 3, type: 'spring', stiffness: 110}}
+                    transition={{duration: 5, type: 'spring', stiffness: 110}}
                 >J</motion.div>
                 <div className='d-flex align-items-end'>
                     {animatedFirstName}
@@ -47,7 +47,7 @@ function Name() {
                     className='display-1 fw-bold'
                     initial={{x: -400, y: 400,opacity:0, rotateZ:-270}}
                     animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
-                    transition={{delay: 1.5, duration: 3, type: 'spring', stiffness: 110}}
+                    transition={{duration: 5, type: 'spring', stiffness: 110}}
                 >G</motion.div>
                 <div className='d-flex align-items-end'>
                     {animatedLastName}
@@ -58,6 +58,6 @@ function Name() {
             </div>
         </div>
     )
-}
+};
 
-export default Name
+export default NameText
