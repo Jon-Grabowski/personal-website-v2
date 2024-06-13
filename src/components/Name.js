@@ -11,7 +11,7 @@ function Name() {
                 className='display-2'
                 initial={{y: "-100vh"}}
                 animate={{y: 0}}
-                transition={{delay:(.3 + (.2*index)), duration: .5, type: 'spring', stiffness: 130}}
+                transition={{delay:(.3 + (.2*index)), duration: .5, type: 'spring', stiffness: 50}}
             >{letter}</motion.div>
         )
     });
@@ -41,8 +41,7 @@ function Name() {
                 <div className='d-flex align-items-end'>
                     {animatedFirstName}
                 </div>
-            </div>
-            <div className='d-flex ps-5'>
+                <span style={{width: '20px'}}></span>
                 <motion.div
                     className='display-1 fw-bold'
                     initial={{x: -100, y: 100,opacity:0, rotateZ:-270}}
@@ -52,6 +51,9 @@ function Name() {
                 <div className='d-flex align-items-end'>
                     {animatedLastName}
                 </div>
+            </div>
+            <div className='d-flex ps-5'>
+                
             </div>
         </div>
     )
