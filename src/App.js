@@ -6,8 +6,8 @@ import Content from './components/Content';
 
 function App() {
   return (
-    <div className="App">
-      <div className='app-wrapper' style={{minHeight:'100vh'}}>
+    <div className="App align-items-center">
+      <div className='app-wrapper d-flex align-items-center' style={{minHeight:'100vh'}}>
         <Name />
         {/* <Navbar />
         <Content /> */}
