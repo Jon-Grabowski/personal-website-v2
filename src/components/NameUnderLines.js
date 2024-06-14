@@ -9,9 +9,9 @@ function NameUnderLines() {
             <motion.div 
             className='mb-1' 
             style={{height:'2px', backgroundColor: color, width:'90%'}}
-            initial={{x:'-100vw', y:-20}}
-            animate={{x: 30 + (index*20), y:-20}}
-            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:40}}
+            initial={{x:'-100vw', y:-18}}
+            animate={{x: 30 + (index*20), y:-18}}
+            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35}}
         >
         </motion.div>
         )
