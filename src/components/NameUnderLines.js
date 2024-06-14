@@ -7,10 +7,10 @@ function NameUnderLines() {
     const lines = colors.map((color, index) => {
         return (
             <motion.div 
-            className='mb-1' 
-            style={{height:'2px', backgroundColor: color, width:'90%'}}
-            initial={{x:'-100vw', y:-18}}
-            animate={{x: 30 + (index*20), y:-18}}
+            className='mb-1 float-end' 
+            style={{height:'2px', backgroundColor: color, width:`${100 - (5*index)}%`}}
+            initial={{x:'-100vw'}}
+            animate={{x:2}}
             transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35}}
         >
         </motion.div>

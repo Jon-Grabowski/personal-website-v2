@@ -31,7 +31,7 @@ function Name() {
 
 
     return (
-        <div className='text-start m-auto text-white'>
+        <div className='text-start m-auto text-white d-flex'>
             <div className='d-flex text-bottom'>
                 <motion.div
                     className='display-1 fw-bold'
