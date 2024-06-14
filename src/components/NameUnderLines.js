@@ -21,8 +21,8 @@ function NameUnderLines() {
         >
             <motion.div
                 className='my-1 float-end' 
-                initial={{height:'0px', opacity: 0}}
-                animate={{height:'100%', opacity: 1}}
+                initial={{height:'0px', x: '50vw', opacity:0}}
+                animate={{height:'100%', x:0, opacity:1}}
                 transition={{delay:(2.5 + (index*.5)), duration:.3, type:'spring', stiffness:40}}
             >
                 <span className='pe-4 display-6'>{body}</span>
