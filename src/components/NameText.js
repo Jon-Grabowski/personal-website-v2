@@ -39,22 +39,23 @@ function NameText() {
                         initial={{x: -400, y: -400,opacity:0, rotateZ:-270}}
                         animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
                         transition={{duration: 5, type: 'spring', stiffness: 110}}
-                ><span style={{fontSize:'calc(1em + 12vw)'}}>J</span></motion.div>
+                ><span style={{fontSize:'calc(1em + 13vw)'}}>J</span></motion.div>
             </div>
+            
             <div className='d-flex flex-column'>
                 <div className='d-flex align-items-end'>
-                    <div className='d-flex lh-1' style={{fontSize:'calc(1em + 4vw)'}}>
+                    <div className='d-flex lh-1' style={{fontSize:'calc(1em + 6vw)'}}>
                         {animatedFirstName}
                     </div>
-                    <span style={{width: '20px'}}></span>
+                    <span style={{width: 'calc(.25em + 1vw)'}}></span>
                     <motion.div
                         className='lh-1 fw-bold'
                         initial={{x: -400, y: 400,opacity:0, rotateZ:-270}}
                         animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
                         transition={{duration: 5, type: 'spring', stiffness: 110}}
-                        style={{fontSize:'calc(1em + 6vw)'}}
+                        style={{fontSize:'calc(1em + 9vw)'}}
                     >G</motion.div>
-                    <div className='d-flex lh-1' style={{fontSize:'calc(1em + 4vw)'}}>
+                    <div className='d-flex lh-1' style={{fontSize:'calc(1em + 6vw)'}}>
                         {animatedLastName}
                     </div>
                 </div>

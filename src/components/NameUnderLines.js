@@ -8,11 +8,19 @@ function NameUnderLines() {
         return (
             <motion.div 
             className='mb-1 float-end' 
-            style={{height:'2px', backgroundColor: color, width:`${100 - (5*index)}%`}}
+            style={{borderTop: 'solid', borderWidth:'1px', borderColor: color, width:`${100 - (5*index)}%`}}
             initial={{x:'-100vw'}}
             animate={{x:2}}
-            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35}}
+            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35, delayChildren: 2}}
         >
+            <motion.div
+                className='mb-1 float-end' 
+                initial={{height:'0px', opacity: 0}}
+                animate={{height:'100%', opacity: 1}}
+                transition={{delay:(2.4 + (index*.5)), duration:.4, type:'spring', stiffness:60}}
+            >
+                <h4>TEST</h4>
+            </motion.div>
         </motion.div>
         )
     })
