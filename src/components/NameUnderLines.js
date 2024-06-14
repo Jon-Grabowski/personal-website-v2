@@ -1,25 +1,31 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-//TODO: make end of underlines even, add title and tech stack info between underlines.
+//TODO: add title and tech stack info between underlines.
 function NameUnderLines() {
-    const colors = ['#0aa1f2', '#bd24f0', '#f53131']
+    const details = [
+        {body: 'Font End Engineer', color:'#0aa1f2'}, 
+        {body:'Tech Stack', color:'#bd24f0'}, 
+        {body:'Links', color:'#f53131'},
+        {body:'', color:'#22f241'}
+    ]
 
-    const lines = colors.map((color, index) => {
+    const lines = details.map((detail, index) => {
+        const {body, color} = detail
         return (
             <motion.div 
-            className='mb-1 float-end' 
-            style={{borderTop: 'solid', borderWidth:'1px', borderColor: color, width:`${100 - (5*index)}%`}}
+            className=' float-end' 
+            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${100 - (5*index)}%`}}
             initial={{x:'-100vw'}}
             animate={{x:2}}
-            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35, delayChildren: 2}}
+            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35}}
         >
             <motion.div
-                className='mb-1 float-end' 
+                className='my-1 float-end' 
                 initial={{height:'0px', opacity: 0}}
                 animate={{height:'100%', opacity: 1}}
-                transition={{delay:(2.4 + (index*.5)), duration:.4, type:'spring', stiffness:60}}
+                transition={{delay:(2.5 + (index*.5)), duration:.3, type:'spring', stiffness:40}}
             >
-                <h4>TEST</h4>
+                <span className='pe-4 display-6'>{body}</span>
             </motion.div>
         </motion.div>
         )

@@ -33,7 +33,7 @@ function NameText() {
 
     return (
         <div className='m-auto text-white d-flex px-2'>
-            <div className=''>
+            <div className='z-1'>
                 <motion.div
                         className='lh-1 fw-bold'
                         initial={{x: -400, y: -400,opacity:0, rotateZ:-270}}
@@ -51,7 +51,7 @@ function NameText() {
                     <motion.div
                         className='lh-1 fw-bold'
                         initial={{x: -400, y: 400,opacity:0, rotateZ:-270}}
-                        animate={{x: 0, y: 0, opacity: 1, rotateZ: 0}}
+                        animate={{x: 0, y: 8, opacity: 1, rotateZ: 0}}
                         transition={{duration: 5, type: 'spring', stiffness: 110}}
                         style={{fontSize:'calc(1em + 9vw)'}}
                     >G</motion.div>
