@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+//TODO: make end of underlines even, add title and tech stack info between underlines.
 function NameUnderLines() {
     const colors = ['#0aa1f2', '#bd24f0', '#f53131']
 
