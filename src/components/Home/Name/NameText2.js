@@ -21,7 +21,7 @@ function NameText2() {
 
     return (
       
-            <div className='d-flex flex-column text-white ms-3' style={{minHeight:'20rem'}}>
+            <div className='d-flex flex-column text-white ms-5' style={{minHeight:'20rem'}}>
                 <div id='name-container' className='d-flex align-items-end display-1 d-inline'>
                     <div className='d-flex pe-3'>
                         <motion.div
