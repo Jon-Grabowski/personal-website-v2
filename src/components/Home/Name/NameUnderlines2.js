@@ -17,15 +17,15 @@ function NameUnderLines2() {
             <motion.div 
             className='float-end' 
             style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${95 - (5*index)}%`}}
-            initial={{x:'-100vw'}}
+            initial={{x:'-50vw'}}
             animate={{x:0}}
-            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
+            transition={{delay:(.2 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
             >
                 <motion.div
                     className='my-1 float-end' 
-                    initial={{height:'0px', x: '50vw', opacity:0}}
+                    initial={{height:'0px', x: '-75vw', opacity:0}}
                     animate={{height:30, x:0, opacity:1}}
-                    transition={{delay:(2 + (index*.5)), duration:.3, type:'spring', stiffness:40}}
+                    transition={{delay:(2.1 + (index*.2)), duration:.2, type:'spring', stiffness:30}}
                 >
                     <p className='fs-5 pe-2'>{body}</p>
                     {/* <span className='pe-4 fs-3'>{body}</span> */}

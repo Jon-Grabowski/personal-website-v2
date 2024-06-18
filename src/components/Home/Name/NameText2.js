@@ -11,11 +11,11 @@ function NameText2() {
     const lastName = ['r','a','b','o','w','s','k','i']
 
     const animatedFirstName = firstName.map((letter, index) => {
-        return <NameLowerCaseLetter key={index} letter={letter} index={index} delay={.3} />
+        return <NameLowerCaseLetter key={index} letter={letter} index={index} delay={.5} />
     });
 
     const animatedLastName = lastName.map((letter, index) => {
-        return <NameLowerCaseLetter key={index} letter={letter} index={index}  delay={.3}/>
+        return <NameLowerCaseLetter key={index} letter={letter} index={index}  delay={.6}/>
     });
 
 
@@ -23,7 +23,7 @@ function NameText2() {
       
             <div className='d-flex flex-column text-white ms-3' style={{minHeight:'20rem'}}>
                 <div id='name-container' className='d-flex align-items-end display-1 d-inline'>
-                    <div className='d-flex pe-2'>
+                    <div className='d-flex pe-3'>
                         <motion.div
                             className='fw-bold z-1'
                             variants={firstInitialVariant}
