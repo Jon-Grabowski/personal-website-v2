@@ -1,10 +1,6 @@
 import './App.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import Name from './components/Name';
-import NameText from './components/NameText';
-
-import Navbar from './components/Navbar';
-import Content from './components/Content';
+import NameText from './components/Home/Name/NameText';
 
 function App() {
   return (
@@ -13,8 +9,6 @@ function App() {
         <div className='mx-auto mt-5'>
           <NameText />
         </div>
-        {/* <Navbar />
-        <Content /> */}
       </div>
     </div>
   );

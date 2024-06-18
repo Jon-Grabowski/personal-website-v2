@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 //TODO: add title and tech stack info between underlines.
+
+
 function NameUnderLines() {
     const details = [
         {body: 'Font End Engineer', color:'#0aa1f2'}, 
@@ -18,16 +20,16 @@ function NameUnderLines() {
             initial={{x:'-100vw'}}
             animate={{x:2}}
             transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35}}
-        >
-            <motion.div
-                className='my-1 float-end' 
-                initial={{height:'0px', x: '50vw', opacity:0}}
-                animate={{height:'100%', x:0, opacity:1}}
-                transition={{delay:(2.5 + (index*.5)), duration:.3, type:'spring', stiffness:40}}
             >
-                <span className='pe-4 display-6'>{body}</span>
+                <motion.div
+                    className='my-1 float-end' 
+                    initial={{height:'0px', x: '50vw', opacity:0}}
+                    animate={{height:'100%', x:0, opacity:1}}
+                    transition={{delay:(2 + (index*.5)), duration:.3, type:'spring', stiffness:40}}
+                >
+                    <span className='pe-4 display-6'>{body}</span>
+                </motion.div>
             </motion.div>
-        </motion.div>
         )
     })
 
