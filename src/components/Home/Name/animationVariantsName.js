@@ -16,7 +16,7 @@ const lastInitialVariant = {
     },
     visable: {
         x: 0,
-        y: 8, 
+        y: 0, 
         opacity: 1, 
         rotateZ: 0,
         transition : {duration: 5, type: 'spring', stiffness: 110}

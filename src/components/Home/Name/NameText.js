@@ -3,6 +3,7 @@ import NameLowerCaseLetter from './NameLowerCaseLetter'
 import NameUnderLines from './NameUnderLines'
 import { motion } from 'framer-motion'
 import { firstInitialVariant, lastInitialVariant } from './animationVariantsName';
+import './nametext.css'
 
 //TODO: Fix spacing issue after first initial
 function NameText() {
@@ -19,7 +20,7 @@ function NameText() {
 
 
     return (
-        <div className='m-auto text-white d-flex px-2'>
+        <div className='text-white d-flex px-2'>
             <div className='z-1'>
                 <motion.div
                     className='lh-1 fw-bold'
@@ -32,19 +33,19 @@ function NameText() {
             </div>
             
             <div className='d-flex flex-column'>
-                <div className='d-flex align-items-end justify-content-end border'>
-                    <div className='d-flex lh-1' style={{fontSize:'calc(1em + 6vw)'}}>
+                <div id='name-container' className='d-flex align-items-end'>
+                    <div className='d-flex lh-1' style={{fontSize:'calc(1.5em + 6vw)'}}>
                         {animatedFirstName}
+                        <span style={{width: 'calc(.25em + 1vw)'}}></span>
                     </div>
-                    <span style={{width: 'calc(.25em + 1vw)'}}></span>
                     <motion.div
-                        className='lh-1 fw-bold'
+                        className='lh-1 fw-bold text-center'
                         variants={lastInitialVariant}
                         initial='hidden'
                         animate='visable'
-                        style={{fontSize:'calc(1em + 9vw)'}}
+                        style={{fontSize:'calc(1.5em + 9vw)'}}
                     >G</motion.div>
-                    <div className='d-flex lh-1' style={{fontSize:'calc(1em + 6vw)'}}>
+                    <div className='d-flex lh-1' style={{fontSize:'calc(1.5em + 6vw)'}}>
                         {animatedLastName}
                     </div>
                 </div>

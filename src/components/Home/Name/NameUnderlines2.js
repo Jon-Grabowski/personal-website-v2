@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 //TODO: add title and tech stack info between underlines.
 
 
-function NameUnderLines() {
+function NameUnderLines2() {
     const details = [
-        {body: 'Font End Engineer', color:'#0aa1f2'}, 
+        {body:'Font End Engineer', color:'#0aa1f2'}, 
         {body:'Tech Stack', color:'#bd24f0'}, 
         {body:'Links', color:'#f53131'},
         {body:'', color:'#22f241'}
@@ -16,7 +16,7 @@ function NameUnderLines() {
         return (
             <motion.div 
             className='float-end' 
-            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${90 - (5*index)}%`}}
+            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${95 - (5*index)}%`}}
             initial={{x:'-100vw'}}
             animate={{x:0}}
             transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
@@ -24,10 +24,11 @@ function NameUnderLines() {
                 <motion.div
                     className='my-1 float-end' 
                     initial={{height:'0px', x: '50vw', opacity:0}}
-                    animate={{height:'100%', x:0, opacity:1}}
+                    animate={{height:30, x:0, opacity:1}}
                     transition={{delay:(2 + (index*.5)), duration:.3, type:'spring', stiffness:40}}
                 >
-                    <span className='pe-4 fs-3'>{body}</span>
+                    <p className='fs-5 pe-2'>{body}</p>
+                    {/* <span className='pe-4 fs-3'>{body}</span> */}
                 </motion.div>
             </motion.div>
         )
@@ -40,4 +41,4 @@ function NameUnderLines() {
     )
 }
 
-export default NameUnderLines
+export default NameUnderLines2

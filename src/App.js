@@ -1,14 +1,12 @@
 import './App.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import NameText from './components/Home/Name/NameText';
+import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <div className='app-wrapper d-flex overflow-hidden' style={{minHeight:'100vh'}}>
-        <div className='mx-auto mt-5'>
-          <NameText />
-        </div>
+    <div className="App overflow-hidden">
+      <div className='app-wrapper d-flex' style={{minHeight:'100vh'}}>
+        <Home />
       </div>
     </div>
   );
