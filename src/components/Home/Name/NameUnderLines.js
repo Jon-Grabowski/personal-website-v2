@@ -18,7 +18,7 @@ function NameUnderLines() {
             className=' float-end' 
             style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${100 - (5*index)}%`}}
             initial={{x:'-100vw'}}
-            animate={{x:2}}
+            animate={{x:0}}
             transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:35}}
             >
                 <motion.div
