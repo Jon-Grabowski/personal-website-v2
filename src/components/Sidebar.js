@@ -17,10 +17,10 @@ function Sidebar() {
                         animate={{opacity:1}}
                         transition={{delay:2.3, duration:1.5}}
                     >
-                        <Link className='mt-3' to='https://www.linkedin.com/in/jon-grabowski/' target='_blank'>
+                        <Link className='mt-5' to='https://www.linkedin.com/in/jon-grabowski/' target='_blank'>
                             <LinkedIn />
                         </Link>
-                        <Link className='mt-3' to='https://github.com/Jon-Grabowski' target='_blank'>
+                        <Link className='mt-4' to='https://github.com/Jon-Grabowski' target='_blank'>
                             <GitHub />
                         </Link>
                     </motion.div>

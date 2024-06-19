@@ -21,9 +21,9 @@ function NameText2() {
 
     return (
       
-            <div className='d-flex flex-column text-white ms-5' style={{minHeight:'20rem'}}>
+            <div className='d-flex flex-column text-white ms-5' style={{minHeight:'22rem'}}>
                 <div id='name-container' className='d-flex align-items-end display-1 d-inline'>
-                    <div className='d-flex pe-3'>
+                    <div className='d-flex pe-3 position-relative'>
                         <motion.div
                             className='fw-bold z-1'
                             variants={firstInitialVariant}
@@ -50,7 +50,6 @@ function NameText2() {
                 </div>
                 <div className='w-100'>
                     <NameUnderlines2 />
-                    {/* <NameUnderLines /> */}
                 </div>
             </div>
      

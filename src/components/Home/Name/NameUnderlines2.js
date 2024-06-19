@@ -1,33 +1,34 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import './nameunderlines.css'
 //TODO: add title and tech stack info between underlines.
 
 
 function NameUnderLines2() {
     const details = [
-        {body:'Font End Engineer', color:'#0aa1f2'}, 
-        {body:'Tech Stack', color:'#bd24f0'}, 
-        {body:'Links', color:'#f53131'},
-        {body:'', color:'#22f241'}
+        {body:'Web Developer', color:'#0aa1f2', classTag: 'bungee-font'}, 
+        {body:'tech stack', color:'#bd24f0', classTag: ''}, 
+        {body:'Links', color:'#f53131', classTag: ''},
+        {body:'', color:'#22f241', classTag: ''}
     ]
 
     const lines = details.map((detail, index) => {
-        const {body, color} = detail
+        const {body, color, classTag} = detail
         return (
             <motion.div 
-            className='float-end' 
+            className={`float-end ${classTag}`} 
             style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${95 - (5*index)}%`}}
-            initial={{x:'-50vw'}}
-            animate={{x:0}}
+            initial={{x:'-100vw', y:-15}}
+            animate={{x:0, y:-15}}
             transition={{delay:(.2 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
             >
                 <motion.div
                     className='my-1 float-end' 
                     initial={{height:'0px', x: '-75vw', opacity:0}}
-                    animate={{height:30, x:0, opacity:1}}
+                    animate={{height:50, x:0, opacity:1}}
                     transition={{delay:(2.1 + (index*.2)), duration:.2, type:'spring', stiffness:30}}
                 >
-                    <p className='fs-5 pe-2'>{body}</p>
+                    <p className='pe-2'>{body}</p>
                     {/* <span className='pe-4 fs-3'>{body}</span> */}
                 </motion.div>
             </motion.div>
