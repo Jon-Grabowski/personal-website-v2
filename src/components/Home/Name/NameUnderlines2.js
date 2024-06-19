@@ -1,13 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import './nameunderlines.css'
-//TODO: add title and tech stack info between underlines.
+//TODO: FIGURE OUT WHY UNDERLINES ARE TOO LONG WHEN TEXT AMOUNT CHANGES. Add title and tech stack info between underlines.
 
 
 function NameUnderLines2() {
     const details = [
         {body:'Web Developer', color:'#0aa1f2', classTag: 'bungee-font'}, 
-        {body:'tech stack', color:'#bd24f0', classTag: ''}, 
+        {body:'tech stack, tech stack', color:'#bd24f0', classTag: ''}, 
         {body:'Links', color:'#f53131', classTag: ''},
         {body:'', color:'#22f241', classTag: ''}
     ]
@@ -17,7 +17,7 @@ function NameUnderLines2() {
         return (
             <motion.div 
             className={`float-end ${classTag}`} 
-            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${95 - (5*index)}%`}}
+            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${100}%`}}
             initial={{x:'-100vw', y:-15}}
             animate={{x:0, y:-15}}
             transition={{delay:(.2 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
