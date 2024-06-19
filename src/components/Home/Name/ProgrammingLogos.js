@@ -3,7 +3,7 @@ import { JavaScriptLogo, ReactLogo, HtmlLogo, CssLogo, PythonLogo} from '../../L
 
 function ProgrammingLogos() {
     return (
-        <div className='d-flex justify-content-evenly align-items-center my-auto gap-2'>
+        <div className='d-flex justify-content-end align-items-center my-auto gap-2'>
             <div className='d-flex align-items-center flex-column'>
                 <JavaScriptLogo />
                 <span>JavaScript</span>

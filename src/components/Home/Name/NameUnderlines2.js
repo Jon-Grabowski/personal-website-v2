@@ -19,13 +19,13 @@ function NameUnderLines2() {
             <motion.div 
             className={`${classTag}`} 
             // style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${95 - (4*index)}%`}}
-            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${90 + (5+index)}%`}}
+            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:'100%'}}
             initial={{x:'-100vw', y:-15}}
             animate={{x:20, y:-15}}
             transition={{delay:(.2 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
             >
                 <motion.div
-                    className='my-1 text-start' 
+                    className='my-1 d-flex justify-content-end text-start' 
                     initial={{height:'0px', x: '-75vw', opacity:0}}
                     animate={{height: '100%', x:0, opacity:1}}
                     transition={{delay:(2.1 + (index*.2)), duration:.2, type:'spring', stiffness:30}}
