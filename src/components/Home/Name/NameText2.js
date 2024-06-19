@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { firstInitialVariant, lastInitialVariant } from './animationVariantsName';
 import './nametext.css'
 
-//TODO: Fix spacing issue after first initial
 function NameText2() {
     const firstName = ['o','n']
     const lastName = ['r','a','b','o','w','s','k','i']
@@ -22,7 +21,7 @@ function NameText2() {
     return (
       
             <div className='d-flex flex-column text-white ms-5' style={{minHeight:'22rem'}}>
-                <div id='name-container' className='d-flex align-items-end display-1 d-inline'>
+                <div id='name-container' className='d-flex align-items-end display-1'>
                     <div className='d-flex pe-3 position-relative'>
                         <motion.div
                             className='fw-bold z-1'
