@@ -1,0 +1,30 @@
+#sidebar-container {
+    width:4rem; 
+    height:100%;
+    border-right: solid 1px white;
+}
+
+#sidebar-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 3rem 0rem;
+}
+
+@media only screen and (max-width: 900px) {
+    #sidebar-container {
+        width:100vw; 
+        height:auto;
+        border-right: none;
+        border-bottom: solid 1px white;
+    };
+}
+
+@media only screen and (max-width: 900px) {
+    #sidebar-links-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-bottom: solid 1px white;
+        padding: 1rem 1rem;
+    };
+}

@@ -1,16 +1,14 @@
 import './App.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import Name from './components/Name';
-import Navbar from './components/Navbar';
-import Content from './components/Content';
+import Home from './components/Home/Home';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <div className='app-wrapper' style={{minHeight:'100vh'}}>
-        <Name />
-        {/* <Navbar />
-        <Content /> */}
+    <div className="App overflow-hidden">
+      <div className='app-wrapper d-flex' style={{minHeight:'100vh'}}>
+        <Sidebar />
+        <Home />
       </div>
     </div>
   );
