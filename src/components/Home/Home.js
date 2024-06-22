@@ -1,13 +1,15 @@
 import React from 'react'
+import NameText from './Name/NameText'
 import NameText2 from './Name/NameText2'
 import TitlePicture from './TitlePicture'
+import './home.css'
 
 function Home() {
     return (
-        <div className='d-flex align-items-end float-bottom'>
-            <NameText2 />
-            {/* <TitlePicture /> */}
-        </div>
+            <div id='home-name-container' className=''>
+                <NameText />
+                {/* <TitlePicture /> */}
+            </div>
     )
 }
 

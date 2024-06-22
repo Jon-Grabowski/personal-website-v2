@@ -4,9 +4,9 @@
 };
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .app-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }

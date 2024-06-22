@@ -1,10 +1,27 @@
-#sidebard-container {
+#sidebar-container {
     width:4rem; 
-    min-height:100vh;
-
+    height:100%;
+    border-right: solid 1px white;
 }
 
 #sidebar-links-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    padding-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    #sidebar-container {
+        width:100vw; 
+        height:auto;
+        border-right: none;
+        border-bottom: solid 1px white;
+    };
+
+    #sidebar-links-wrapper {
+        display: flex;
+        flex-direction: row;
+        border: solid 1px white;
+    };
 }

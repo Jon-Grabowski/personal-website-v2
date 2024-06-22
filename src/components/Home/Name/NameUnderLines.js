@@ -1,33 +1,35 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import ProgrammingLogos from './ProgrammingLogos'
+import NameHeadline from './NameHeadline'
 //TODO: add title and tech stack info between underlines.
 
 
 function NameUnderLines() {
     const details = [
-        {body: 'Font End Engineer', color:'#0aa1f2'}, 
-        {body:'Tech Stack', color:'#bd24f0'}, 
-        {body:'Links', color:'#f53131'},
-        {body:'', color:'#22f241'}
+        {body:'Web Developer', color:'#0aa1f2', classTag: 'bungee-font'}, 
+        {body:<ProgrammingLogos />, color:'#bd24f0', classTag: ''}, 
+        {body:<NameHeadline />, color:'#f53131', classTag: ''},
+        {body:'', color:'#22f241', classTag: ''}
     ]
 
     const lines = details.map((detail, index) => {
-        const {body, color} = detail
+        const {body, color, classTag} = detail
         return (
             <motion.div 
-            className='float-end' 
-            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${90 - (5*index)}%`}}
-            initial={{x:'-100vw'}}
-            animate={{x:0}}
-            transition={{delay:(.5 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
+            className={`${classTag} float-end`} 
+            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${100 - (index*5)}%`}}
+            initial={{x:'-100vw', y:-15}}
+            animate={{x:20, y:-15}}
+            transition={{delay:(.2 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
             >
                 <motion.div
-                    className='my-1 float-end' 
-                    initial={{height:'0px', x: '50vw', opacity:0}}
-                    animate={{height:'100%', x:0, opacity:1}}
-                    transition={{delay:(2 + (index*.5)), duration:.3, type:'spring', stiffness:40}}
+                    className='my-1 d-flex justify-content-end text-start me-2' 
+                    initial={{height:'0px', x: '-75vw', opacity:0}}
+                    animate={{height: '100%', x:0, opacity:1}}
+                    transition={{delay:(2.1 + (index*.2)), duration:.2, type:'spring', stiffness:30}}
                 >
-                    <span className='pe-4 fs-3'>{body}</span>
+                    {body}
                 </motion.div>
             </motion.div>
         )
@@ -39,5 +41,6 @@ function NameUnderLines() {
         </div>
     )
 }
+
 
 export default NameUnderLines

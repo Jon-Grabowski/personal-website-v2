@@ -1,5 +1,6 @@
 import React from 'react'
 import NameLowerCaseLetter from './NameLowerCaseLetter'
+import NameUnderLines from './NameUnderLines'
 import NameUnderlines2 from './NameUnderlines2'
 import { motion } from 'framer-motion'
 import { firstInitialVariant, lastInitialVariant } from './animationVariantsName';
@@ -20,9 +21,9 @@ function NameText2() {
 
     return (
       
-            <div className='d-flex flex-column text-white ms-5' style={{minHeight:'22rem'}}>
-                <div id='name-container' className='d-flex align-items-end display-1'>
-                    <div className='d-flex pe-3 position-relative'>
+            <div className='d-flex flex-column text-white ms-5 border' style={{minHeight:'22rem'}}>
+                <div id='name-container' className='d-flex align-items-end display-1 border'>
+                    <div className='d-flex pe-3'>
                         <motion.div
                             className='fw-bold z-1'
                             variants={firstInitialVariant}
@@ -47,8 +48,8 @@ function NameText2() {
                         </div>
                     </div>
                 </div>
-                <div className='w-100'>
-                    <NameUnderlines2 />
+                <div className=''>
+                    <NameUnderLines />
                 </div>
             </div>
      
