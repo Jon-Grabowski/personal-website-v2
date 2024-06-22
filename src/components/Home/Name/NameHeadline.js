@@ -2,7 +2,7 @@ import React from 'react'
 
 function NameHeadline() {
     return (
-        <div className='text-end text-wrap'>
+        <div className='fs-5 text-end text-wrap'>
             <p>"I find joy in blending creativity with the art of problem-solving through code."</p>
             {/* <p>"Tagline"</p> */}
 
