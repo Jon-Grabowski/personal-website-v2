@@ -1,7 +1,40 @@
-#name-container {
+#name-container{
+    margin-left: 3rem;
+    max-width: 30rem;
+}
+
+#name-wrapper {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 250;
     font-style: normal;
     font-size: 80px;
+}
+
+@media screen and (max-width: 900px) {
+    #name-container{
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    #name-wrapper {
+        font-size: 60px;
+    }
+
+    #name-container{
+        max-width: 22rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #name-wrapper {
+        font-size: 50px;
+    }
+
+    #name-container{
+        max-width: 20rem;
+    }
 }
