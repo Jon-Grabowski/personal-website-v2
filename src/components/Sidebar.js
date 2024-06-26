@@ -7,11 +7,12 @@ import { motion } from 'framer-motion'
 function Sidebar() {
     return (
         <motion.div
+            id='sidebar-container'
             initial={{y:'-100vh'}}
             animate={{y:0}}
             transition={{duration:2, delay:.5, type:'spring', stiffness:200, damping:20, when:'beforeChildren'}}
         >
-            <div id='sidebar-container' className=''>
+            <div  className=''>
                     <motion.div id='sidebar-links-wrapper'
                         initial={{opacity:0}}
                         animate={{opacity:1}}

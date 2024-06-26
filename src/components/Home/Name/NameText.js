@@ -52,7 +52,6 @@ function NameText() {
                     <NameUnderLines />
                 </div>
             </div>
-     
     )
 };
 

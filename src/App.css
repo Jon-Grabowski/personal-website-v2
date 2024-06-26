@@ -1,12 +1,18 @@
 .App {
   text-align: center;
-  background: radial-gradient(rgb(10, 10, 162), rgb(3, 3, 59))
-};
+  background: radial-gradient(rgb(10, 10, 162), rgb(3, 3, 59));
+}
+
+.app-wrapper{
+  min-height: 100vh;
+  display: flex;
+  align-items: end;
+}
 
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   .app-wrapper{
-    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
