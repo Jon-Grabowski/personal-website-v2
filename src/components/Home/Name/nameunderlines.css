@@ -6,3 +6,9 @@
     color: rgb(116, 245, 183);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
+
+@media screen and (max-width: 550px) {
+    .bungee-font {
+        font-size: 20px;
+    }
+}

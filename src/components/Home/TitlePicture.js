@@ -3,23 +3,19 @@ import { motion } from 'framer-motion'
 
 const pictureVariant = {
     hidden: {
-        width: 0,
-        opacity: 0,
-        rotateY: 360
+        opacity: 0
     },
     visable: {
-        width: '100%',
         opacity: 1,
-        rotateY: 0,
-        transition: {delay:3.5, duration: 5, type:'spring', stiffness: 20}
+        transition: {delay:2.3, duration: 1.5}
     }
 };
 
 function TitlePicture() {
     return (
         <motion.div 
-            className=''
-            style={{maxWidth:'20rem'}}
+            className='m-auto mt-3'
+            style={{maxWidth:'15rem'}}
             variants={pictureVariant}
             initial='hidden'
             animate='visable'

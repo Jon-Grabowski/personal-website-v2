@@ -17,14 +17,14 @@ function NameUnderLines() {
         const {body, color, classTag} = detail
         return (
             <motion.div 
-            className={`${classTag} float-end`} 
-            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${100 - (index*5)}%`}}
+            className={`${classTag}`} 
+            style={{borderTop: 'solid', borderWidth:'2px', borderColor: color, width:`${95 - (index*5)}%`}}
             initial={{x:'-100vw', y:-15}}
             animate={{x:20, y:-15}}
             transition={{delay:(.2 + (index*.1)), duration:.1, type:'spring', stiffness:30}}
             >
                 <motion.div
-                    className='my-1 d-flex justify-content-end text-start me-2' 
+                    className='my-1 text-start ms-2' 
                     initial={{height:'0px', x: '-75vw', opacity:0}}
                     animate={{height: '100%', x:0, opacity:1}}
                     transition={{delay:(2.1 + (index*.2)), duration:.2, type:'spring', stiffness:30}}
@@ -36,7 +36,7 @@ function NameUnderLines() {
     })
 
     return (
-        <div className='w-100'>
+        <div className='flex-column align-items-end'>
             {lines}
         </div>
     )

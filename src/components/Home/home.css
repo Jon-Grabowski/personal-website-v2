@@ -1,4 +1,3 @@
 #home-name-container {
-    display: flex;
-    align-items: end;
+    max-width: 40rem;
 }

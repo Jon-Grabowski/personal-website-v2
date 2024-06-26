@@ -5,10 +5,11 @@ import TitlePicture from './TitlePicture'
 import './home.css'
 
 function Home() {
+    
     return (
             <div id='home-name-container' className=''>
+                <TitlePicture />
                 <NameText />
-                {/* <TitlePicture /> */}
             </div>
     )
 }
